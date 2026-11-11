@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background:
+        radial-gradient(circle at 80% 20%, #3a1052 0%, transparent 45%),
+        radial-gradient(circle at 20% 80%, #4a0f2e 0%, transparent 50%),
+        #12060f;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px 0 40px;
+}
+
+nav .links {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(194, 192, 192);
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+.section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left .name-img {
+    width: 400px;
+}
+
+.left .meta {
+    position: absolute;
+    top: 290px;
+    color: gray;
+    margin-left: 70px;
+}
+
+.btns {
+    margin-left: 70px;
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.btn1 {
+    background: linear-gradient(90deg, #c2185b 0%, #e8701a 100%);
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.btn2 {
+    padding: 10px 35px;
+    border-radius: 6px;
+    border: 1.5px solid #b0245a;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.btn1 img,
+.btn2 img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    position: relative;
+    left: -7px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.left h1 {
+    color: rgb(107, 102, 102);
+    font-size: 130px;
+    position: absolute;
+    top: 450px;
+    left: 200px;
+}
+
+.scroll {
+    position: absolute;
+    left: 48%;
+    top: 200px;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.scroll span {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #dbdbdb;
+}
+
+.scroll .line {
+    width: 1.5px;
+    height: 60px;
+    background: #ff3d81;
+}
+
+.player-img {
+    width: 800px;
+    position: absolute;
+    right: -10px;
+    top: 110px;
+}
+
+.social-links img {
+    width: 80px;
+    writing-mode: vertical-rl;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 60px;
+    cursor: pointer;
+}
+
+.right h1 {
+    color: rgb(107, 102, 102);
+    font-size: 130px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    writing-mode: vertical-rl;
+    transform: translateX(42%) rotate(180deg);
+}
+
+.cards {
+    width: 85%;
+    height: 250px;
+    background: rgba(201, 20, 92, 0.15);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    z-index: 1;
+    top: 530px;
+    left: 95px;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.card1,
+.card2,
+.card3 {
+    position: relative;
+}
+
+.card1 .thumb,
+.card2 .thumb,
+.card3 .thumb {
+    width: 320px;
+    height: 80%;
+    position: relative;
+    top: 28px;
+    left: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card1 .video-player,
+.card2 .video-player,
+.card3 .video-player {
+    position: absolute;
+    right: -20px;
+    bottom: 35px;
+    width: 25px;
+    height: 28px;
+    object-fit: contain;
+    cursor: pointer;
+}

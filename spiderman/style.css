@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background:
+        radial-gradient(circle at 0% 0%, #5a0a3c 0%, transparent 40%),
+        radial-gradient(circle at 50% 55%, #100a5a 0%, transparent 55%),
+        radial-gradient(circle at 100% 100%, #3a0f55 0%, transparent 40%),
+        #07031a;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.upper-text h5{
+    position: absolute;
+    right: 80px;
+    top: 40px;
+}
+.upper-text h2{
+    position: absolute;
+    top: 50px;
+    left: 60px;
+}
+
+.cards {
+    height: 100%;
+    width: 90%;
+    position: relative;
+    left: 65px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card-container1,
+.card-container2 {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    width: 250px;
+    height: 110%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.card1 img,
+.card2 img,
+.card3 img,
+.card4 img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.info h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.likes {
+    font-size: 11px;
+    color: #d0d0d0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.likes i {
+    font-style: normal;         
+    font-size: 15px;
+}
+
+
+.bid-btn {
+    margin-top: auto;
+    margin-left: 20px;        
+    padding: 8px 0;
+    width: 80%;
+    background: transparent;
+    border: 2px solid #9b6ac8;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.bid-btn:hover {
+    background: rgba(155, 106, 200, 0.3);
+}
